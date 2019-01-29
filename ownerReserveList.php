@@ -12,13 +12,13 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="./css/style.css" type="text/css">
-  <title>JIKKYO PENSION</title>
+  <title>Git Hotel</title>
 </head>
 <body>
   <!-- ヘッダー：開始-->
   <header id="header">
     <div id="pr">
-      <p>部活・サークル等のグループ利用に最適！アットホームなペンション！</p>
+      <p>安らぎと華やかさが融合した最高級の施設と温かいおもてなしでお客さまをお迎えいたします。</p>
     </div>
     <h1><a href="./index.php"><img src="./images/logo.png" alt=""></a></h1>
     <div id="contact">
@@ -50,7 +50,7 @@
             <th>客室名称</th>
             <th>客室タイプ</th>
             <th>一泊料金<br>（部屋単位）</th>
-            <th colspan="2">お部屋イメージ</th>
+            <th colspan="2">客室イメージ</th>
 <?php
   $reserveDt = $_POST['reserveDay'];	// 予約したい日付
   $_SESSION['reserve']['day'] = $reserveDt;
@@ -100,7 +100,7 @@
   <!-- コンテンツ：終了 -->
   <!-- フッター：開始 -->
   <footer id="footer">
-    Copyright c 2016 Jikkyo Pension All Rights Reserved.
+    Copyright c 2016 Git Hotel All Rights Reserved.
   </footer>
   <!-- フッター：終了 -->
 <?php
