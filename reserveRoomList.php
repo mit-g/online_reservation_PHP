@@ -101,7 +101,7 @@
         </ul>
       </section>
       <section>
-        <h2>お部屋紹介</h2>
+        <h2>客室紹介</h2>
 <?php include("./sideList.php"); ?>
       </section>
     </aside>
