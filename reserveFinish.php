@@ -12,7 +12,7 @@ unset($_SESSION['reserveNo']);
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="./css/style.css" type="text/css">
-  <title>JIKKYO PENSION</title>
+  <title>Git Hotel</title>
 </head>
 <body>
   <!-- ヘッダー：開始-->
@@ -65,7 +65,7 @@ unset($_SESSION['reserveNo']);
         </ul>
       </section>
       <section>
-        <h2>お部屋紹介</h2>
+        <h2>客室紹介</h2>
 <?php require_once("./sideList.php"); ?>
       </section>
     </aside>
@@ -79,7 +79,7 @@ unset($_SESSION['reserveNo']);
   <!-- コンテンツ：終了 -->
   <!-- フッター：開始 -->
   <footer id="footer">
-    Copyright c 2016 Jikkyo Pension All Rights Reserved.
+    Copyright c 2016 Git Hotel All Rights Reserved.
   </footer>
   <!-- フッター：終了 -->
 </body>
