@@ -25,7 +25,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="./css/style.css" type="text/css">
-  <title>JIKKYO PENSION</title>
+  <title>Git Hotel</title>
 </head>
 <body>
   <!-- ヘッダー：開始-->
@@ -61,7 +61,7 @@
         <p>予約内容をご確認後、よろしければ予約確定ボタンを押してください。</p>
         <h3>予約情報</h3>
         <table class="input">
-          <tr><th>お部屋名称</th><td><?php echo $roomName; ?></td></tr>
+          <tr><th>客室名称</th><td><?php echo $roomName; ?></td></tr>
           <tr><th>宿泊日</th><td><?php echo $reserveDay; ?></td></tr>
         </table>
         <br>
@@ -109,7 +109,7 @@
   <!-- コンテンツ：終了 -->
   <!-- フッター：開始 -->
   <footer id="footer">
-    Copyright c 2016 Jikkyo Pension All Rights Reserved.
+    Copyright c 2016 Git Hotel All Rights Reserved.
   </footer>
   <!-- フッター：終了 -->
 <?php
