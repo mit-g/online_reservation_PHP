@@ -156,7 +156,7 @@
   <!-- コンテンツ：終了 -->
   <!-- フッター：開始 -->
   <footer id="footer">
-    Copyright c 2016 Jikkyo Pension All Rights Reserved.
+    Copyright c 2019 Jikkyo Pension All Rights Reserved.
   </footer>
   <!-- フッター：終了 -->
 <?php
