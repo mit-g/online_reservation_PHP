@@ -38,16 +38,18 @@
     <div id="contents">
     <!-- メイン：開始 -->
     <?php
-        $sql = "SELECT
-        room_name,information,main_image,image1,image2,image3,type_name,dayfee,amenity FROM room,room_type WHERE room.type_id = room_type.type_id AND room.room_no = {$rno}";
+        $sql = " SELECT room_name,information,main_image,image1,image2,image3,type_name,dayfee,amenity
+        FROM room,room_type
+        WHERE room.type_id = room_type.type_id
+        AND room.room_no = '{$rno}' ";
         $result = mysqli_query($link,$sql);
         $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-        ?>
+    ?>
     <main id="main">
       <article>
         <section>
         <h2>客室詳細</h2>
-            <h3>『<?php echo $row['room_name'];?>』</h3>
+            <h3>『<?php echo $row['room_name']; ?>』</h3>
         <p>
             <?php echo $row['information'];?>
         </p>
@@ -74,7 +76,7 @@
                 <td><?php echo $row['type_name'];?></td>
                 <td class="number">&yen;
                     <?php echo number_format($row['dayfee']);?></td>
-                <td><?php echo $row[''];?></td>
+                <td><?php echo $row['amenity'];?></td>
         </tr>
         </table>
             
@@ -106,7 +108,7 @@
       </section>
       <section>
         <h2>客室紹介</h2>
-        <?php include("./sideList.php");?>
+        <?php include("./sideList.php"); ?>
       </section>
     </aside>
         <!-- サイド：終了 -->
