@@ -40,7 +40,7 @@ if (isset($_SESSION['reserve'])) {
                   <table>
                       <tr>
                           <th></th>
-                          <td><input type="date" name"reserveDay"
+                          <td><input type="date" name="reserveDay"
                             Value="<?php echo date('Y-m-d');?>" min="<?php echo date('Y-m-d');?>"required></td>
                       </tr>
                   </table>
