@@ -11,14 +11,21 @@
     die("接続に失敗しました：" . mysqli_connect_error());
   }
   mysqli_set_charset($link, "utf8");
-  $roomNo = $_GET['rno'];
+  if(empty($_GET["rno"]) == true){
+     $roomNo = '';
+    }else{
+     $roomNo = htmlspecialchars($_GET["rno"]);
+    }
   $sql = "SELECT room_name  FROM room  WHERE  room_no = {$roomNo}";
   $result = mysqli_query($link, $sql);
   $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
   $roomName = $row['room_name'];
   $_SESSION['reserve']['roomno'] = $roomNo;
-  $reserveDay = $_SESSION['reserve']['day'];
-
+ if(empty($_SESSION['reserve']['day']) == true){
+     $reserveDay ='';
+    }else{
+     $reserveDay =htmlspecialchars($_SESSION['reserve']['day']);
+    }
   $dname = "";
   if (isset($_SESSION['reserve']['dname']) == true) {
       $dname = $_SESSION['reserve']['dname'];
@@ -45,7 +52,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="./css/style.css" type="text/css">
-  <title>JIKKYO PENSION</title>
+  <title>Git Hotel</title>
 </head>
 <body>
   <!-- ヘッダー：開始-->
